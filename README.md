@@ -1,5 +1,5 @@
 # MarkI-QuadCopter
-Arduino Code of My First Drone Build + HC-05
+Arduino Code of My First Drone Build with HC-05 and Android
 
 This code is a derived version of Joop Brooking's Code(http://www.brokking.net/). 
 It has been adapted to use blutetooth as a transiver, unlike traditinal RF.
