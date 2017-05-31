@@ -271,9 +271,9 @@ void fastWrite(){
   
   PORTD |= B11110000;                                                       //Set digital outputs 4,5,6 and 7 high.
   curTime=micros();
-  timer_channel_1 = 1000 + curTime;                                     //Calculate the time of the faling edge of the esc-1 pulse.
+  timer_channel_1 = esc_1 + curTime;                                     //Calculate the time of the faling edge of the esc-1 pulse.
   timer_channel_2 = esc_2 + curTime;                                     //Calculate the time of the faling edge of the esc-2 pulse.
-  timer_channel_3 = 1000 + curTime;                                     //Calculate the time of the faling edge of the esc-3 pulse.
+  timer_channel_3 = esc_3 + curTime;                                     //Calculate the time of the faling edge of the esc-3 pulse.
   timer_channel_4 = esc_4 + curTime;                                     //Calculate the time of the faling edge of the esc-4 pulse.
  
   //There is always 1000us of spare time. So let's do something usefull that is very time consuming.
